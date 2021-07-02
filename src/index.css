@@ -5,9 +5,89 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #4EA8DE ; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  background : #5E60CE; 
+  margin : 20px auto ; 
+  width : 90% ; 
+  max-width: 700px;
+  color: #FAF9F9 ;
+}
+.navbar{
+  padding : 10px 20px ;
+  text-align: center;
+  background : #7400B8 ;
+}
+
+.navbar h1 {
+  margin : 10px 0 ;
+}
+
+.todo-list{
+  margin: 20px ; 
+}
+.todo-list ul{
+  padding: 0;
+  list-style-type: none;
+}
+.todo-list li{
+  background: #5390D9;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.todo-list li:hover{
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.todo-list .task{
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+}
+.todo-list .time{
+  font-size: 0.9em;
+  color: #ddd;
+}
+.emptyList{
+  margin: 20px;
+  text-align: center;
+}
+form{
+  padding: 20px;
+}
+input[type='text']{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #7400b8;
+  color: #fff;
+  border: 0;
+}
+input[type='text']::-webkit-input-placeholder{
+ color: #fff ;
+ opacity: 0.5 ;
+}
+input[type='time']{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #7400b8;
+  color: #fff;
+  border: 0;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+   filter: invert(100%);
+}
+input[type='submit']{
+  margin: 10px auto;
+  background: #eee;
+  border: 0;
+  padding: 6px 20px;
+  display: block;
 }
