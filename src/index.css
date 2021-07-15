@@ -5,24 +5,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #4EA8DE ; 
+ 
 }
 
 .App{
-  background : #5E60CE; 
-  margin : 20px auto ; 
-  width : 90% ; 
-  max-width: 700px;
+  background-color: #12524b6b ; 
   color: #FAF9F9 ;
 }
+/* signup */
+
+.signup h2{
+  font-size:40px;
+  font-weight:bold;
+  text-align: center;
+}
+.signup p{
+  text-align:center;
+  color: rgb(222, 226, 12)
+}
+
+.signup {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  padding: 60px;
+  margin: auto;
+  width: 100%;
+  max-width: 520px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgb(82, 84, 104) 0%,
+    rgba(44, 119, 119, 0.9) 59%,
+    rgba(106, 109, 102, 0.993) 100%
+  );
+  box-shadow: 10px 30px 28px rgba(92, 59, 59, 0.25), 
+  0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.signup label {
+  text-align: center;
+  color: white;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.signup input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+}
+.signup input[type='submit']{
+  background-color: rgba(74, 60, 78, 0.404);
+  margin: 60px 50px 10px 0 ; 
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+.signup input[type='submit']:hover{
+  
+  background-color: rgba(187, 174, 104, 0.404);
+}
+
+.signup .LoginContainer p {
+  text-align: center;
+  color: #fff;
+}
+
+.signup .forgotpassword{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.todoapp{
+  background : #5E60CE; 
+  box-shadow: 10px 30px 28px rgba(92, 59, 59, 0.25), 
+  0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 .navbar{
   padding : 10px 20px ;
-  text-align: center;
   background : #7400B8 ;
 }
 
 .navbar h1 {
-  margin : 10px 0 ;
+  margin : 10px auto ;
+}
+.navbar p {
+  margin : 10px auto ;
 }
 
 .todo-list{
@@ -90,4 +170,29 @@ input[type='submit']{
   border: 0;
   padding: 6px 20px;
   display: block;
+  border-radius: 6px;
 }
+.btn button{
+  border: none;
+	background: #4d0577;
+	color: #ffffff ;
+	font-weight: 100;
+	padding: 10px;
+	text-transform: uppercase;
+	border-radius: 6px;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+}
+.btn button:hover{
+  color: #404040 !important;
+	font-weight: 700 !important;
+	letter-spacing: 3px;
+	background: #c184e467;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
+}
+
+
+
+
