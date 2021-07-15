@@ -21,7 +21,7 @@ function App() {
             <AuthContextProvider>
               <TodoListContextProvider>
                 <Switch>
-                  <PrivateRoute exact path="/" component={TodoApp}/>
+                  <PrivateRoute exact path="/home" component={TodoApp}/>
                   <Route path="/signup" component={SignUp} />
                   <Route path="/login" component={Login} />
                   <Route path="/forgot-password" component={ForgotPassword}/>
