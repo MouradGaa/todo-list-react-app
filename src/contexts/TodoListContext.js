@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid' ;
 
 export const TodoListContext = createContext() ; // creating a context and export it 
 
-const TodoListContextProvider = (props) => {  // pass props and we use useState
+const TodoListContextProvider = (props) => {  // pass props and use useState
     const [todoLists,setTodoList] = useLocalStorage("tasks",[]);
     function useLocalStorage(key,initialValue){
         // State to store our value
@@ -24,15 +24,12 @@ const TodoListContextProvider = (props) => {  // pass props and we use useState
   // ... persists the new value to localStorage.
   const setValue = (value) => {
     try {
-      // Allow value to be a function so we have same API as useState
-      const valueToStore =
-        value instanceof Function ? value(storedValue) : value;
+      const valueToStore = value instanceof Function ? value(storedValue) : value;
       // Save state
       setStoredValue(valueToStore);
       // Save to local storage
       window.localStorage.setItem(key, JSON.stringify(valueToStore));
     } catch (error) {
-      // A more advanced implementation would handle the error case
       console.log(error);
     }
   };
