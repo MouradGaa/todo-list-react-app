@@ -17,11 +17,11 @@ function App() {
 
       <Container className='d-flex align-items-center justify-content-center' style={{ minHeight: "100vh" }} >
         <div className="w-100" style={{ maxWidth: "400px" }}>
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
             <AuthContextProvider>
               <TodoListContextProvider>
                 <Switch>
-                  <PrivateRoute exact path="/home" component={TodoApp}/>
+                  <PrivateRoute exact path="/" component={TodoApp}/>
                   <Route path="/signup" component={SignUp} />
                   <Route path="/login" component={Login} />
                   <Route path="/forgot-password" component={ForgotPassword}/>

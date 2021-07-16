@@ -22,7 +22,7 @@ export default function SignUp() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
-            history.push("/home")
+            history.push("/")
         } catch {
             setError('Failed to create an account')
         }
@@ -39,6 +39,7 @@ export default function SignUp() {
                 <input type="password" ref={passwordRef} required/>
                 <label>Password Confirmation</label>
                 <input type="password" ref={passwordConfirmRef} required/>
+                {error && <p>{error}</p>}
                 <input type="submit" disabled={loading} value="Sign Up"/>
             </form>
             

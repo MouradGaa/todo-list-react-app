@@ -15,7 +15,7 @@ const TodoList = () => {
         
      ) : (  // else return something else
          <div className ='emptyList'>
-            <h1>What do you have in mind for today ?</h1>
+            <h1>What do you have in mind today ?</h1>
             {console.log(todoLists)}
          </div>
        
